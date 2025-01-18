@@ -1,0 +1,388 @@
+.light-theme {
+    --background-color: #f1f2f7;
+    --background-color-div: #fff;
+    --text-color: #000;
+    --pagination-color: rgba(0, 0, 0, .54);
+    --pagination-fill: rgba(0, 0, 0, .54);
+    --pop-up:#ffffff;
+    --device-hover: #dae1f3;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #232b3e;
+    --background-color-div: #1a202e;
+    --text-color: #fff;
+    --pagination-color: rgba(255, 255, 255, 0.54);
+    --pagination-fill: rgba(255, 255, 255, 0.54);
+    --pop-up:#232b3e;
+    --device-hover: #020910;
+}
+
+
+.device-main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin-left: 20%;
+    color: var(--text-color);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.device-content-main{
+    width: 95%;
+    height: auto;
+    background-color: var(--background-color-div);
+    border-radius: 20px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+    overflow: hidden;
+    margin-top: 50px;
+}
+.device-content{
+    width: 100%;
+    height: 70px;
+    background-color: var(--device-hover);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.device-content-head{
+  width: 130px;
+  height: 50px;
+  /* background-color: violet; */
+  padding-left: 10px;
+  color: var(--text-color);
+}
+.device-content-items{
+  width: 300px;
+  height: 50px;
+  /* background-color: #ff4d4d; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+}
+.device-search{
+  width: 70%;
+  height: 40px;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  border: 1px solid rgba(148, 148, 148, 0.497);
+  border-radius: 20px;
+  color: rgba(148, 148, 148, 0.497);
+}
+.device-search input{
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+}
+.fa-square-plus{
+  cursor: pointer;
+}
+.dZYcTC{
+  border-radius: unset !important;
+}
+.hudJpJ{
+  background-color: var(--background-color-div) !important;
+}
+.hxydeb{
+  color: var(--text-color) !important;
+  font-size: 15px !important;
+
+}
+.iGxMlw{
+  color: var(--text-color) !important;
+  background-color: var(--background-color-div) !important;
+}
+.hDPlLz{
+  background-color: var(--background-color-div) !important;
+  color: var(--text-color) !important;
+}
+.cPTFZC{
+  color: var(--pagination-color) !important;
+  fill: var(--pagination-fill) !important;
+}
+
+.device-action-btn{
+  display: flex;
+  /* background-color: #000; */
+  /* justify-content: center;
+  align-items: center; */
+  gap: 10px;
+}
+.action-button {
+    background: none;
+    border: none;
+    color: #005cbb;
+    font-size: 1.2rem;
+  }
+  .fa-pen-to-square{
+    /* margin-left: 20px; */
+    color: #005cbb;
+  }
+  .action-button i{
+    cursor: pointer;
+  }
+  
+  .action-button i:hover {
+    color: #ff1a1a;
+  }
+  .model-edit-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.268);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .model-edit-popup-content {
+    background-color: var(--pop-up);
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    height: 450px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .model-edit-popup-close{
+    margin-left: 95%;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .model-edit-popup-save{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #005cbb;
+    /* outline: none; */
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .model-edit-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #ff1a1a; */
+  }
+  .model-raw-details-main{
+    width: 90%;
+    height: 310px;
+    /* background-color: yellowgreen; */
+    overflow-y: scroll;
+  }
+  .model-raw-details-main::-webkit-scrollbar{
+    width: 4px;
+  }
+  .model-raw-details-main::-webkit-scrollbar-thumb{
+    color: gray;
+  }
+  .model-raw-add-main{
+    width: 90%;
+    height: 100px;
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .model-raw-add-head{
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: wheat; */
+    display: flex;
+  }
+  .model-raw-inputs{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .model-raw-inputs input{
+    width: 30%;
+
+  }
+  .model-raw-inputs button{
+    width: 100px;
+    height: 40px;
+    background-color: #005cbb;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+
+
+  .model-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #ff1a1a; */
+  }
+  .delete-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.268);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .delete-popup-content {
+    background-color: var(--pop-up);
+    padding: 0 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 200px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .delete-popup-btn{
+    display: flex;
+    gap: 20px;
+  }
+
+  .delete-popup-confirm{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #005cbb;
+    color: white;
+    cursor: pointer;
+  }
+  .delete-popup-cancel{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #005cbb;
+    color: white;
+    cursor: pointer;
+  }
+  .model-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.268);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .model-popup-content {
+    background-color: var(--pop-up);
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px;
+    height: 450px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .model-popup-close{
+    margin-left: 95%;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .model-popup-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #ff1a1a; */
+  }
+  input{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 10px;
+    color: var(--text-color);
+  }
+  .model-popup-save{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #005cbb;
+    /* outline: none; */
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+ .model-add-input{
+  width: 90%;
+  height: 50px;
+  /* background-color: var(--background-hover-color); */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .model-add-input-tax{
+  width: 90%;
+  display: flex;
+  /* gap: 30px; */
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #000; */
+ }
+ .model-add-input-tax input{
+  width: 60% !important;
+
+ }
+ .tax{
+  width: 30%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
+ .raw-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #005cbb;
+  font-size: 18px;
+ }
+  
+@media (max-width:1100px) {
+    .device-main{
+        width: 100%;
+        margin-left: 0;
+    }
+}

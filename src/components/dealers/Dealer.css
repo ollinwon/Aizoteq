@@ -1,0 +1,37 @@
+.dark-theme {
+    --background-color: #232b3e;
+    --background-color-div: #1a202e;
+    --text-color: #fff;
+    --background-hover-color: #10131c;
+}
+.light-theme {
+    --background-color: #f1f2f7;
+    --background-color-div: #fff;
+    --text-color: #000;
+    --background-hover-color: #f0f3fb;
+}
+
+.dealers-main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin-left: 20%;
+    color: var(--text-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dealer-content-main{
+    width: 95%;
+    height: 522px;
+    background-color: var(--background-color-div);
+    
+}
+
+@media (max-width:1100px) {
+    .dealers-main{
+        width: 100%;
+        margin-left: 0;
+    }
+}

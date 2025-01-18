@@ -1,0 +1,320 @@
+.light-theme {
+    --background-color: #f1f2f7;
+    --background-color-div: #fff;
+    --text-color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #232b3e;
+    --background-color-div: #1a202e;
+    --text-color: #fff;
+}
+
+.bill-dummy{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-dummy img{
+    width: 8rem;
+    margin-left: 30px;
+}
+.bill-time{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.bill-main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin-left: 20%;
+    color: var(--text-color);
+}
+.bill-content-main{
+    width: 100%;
+    height:91%;
+    /* background-color: rgba(255, 255, 0, 0.334); */
+    display: flex;
+    /* gap: 5px; */
+}
+
+.bill-content{
+    width: 75%;
+    height: auto;
+    /* background-color: aqua; */
+    /* border-top: .1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.bill-content-details{
+    width: 97%;
+    height: 30%;
+    background-color: var(--background-color-div);
+    display: flex;
+    /* border-bottom: 1px solid gray; */
+    border-radius: 0 20px 20px 20px;
+}
+.bill-customer-details{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(149, 227, 72); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gray;
+}
+.bill-customer-content{
+    width: 95%;
+    height: 40px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-customer-content input{
+    width: 60%;
+    height: 30px;
+    border-radius: 0;
+    color: var(--text-color);
+}
+
+.bill-item-details-main{
+    width: 50%;
+    height: 100%;
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bill-item-details{
+    width: 100%;
+    height: 140px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bill-content-table{
+    width: 97%;
+    height: 65%;
+    background-color: var(--background-color-div);
+    border-radius: 20px 20px 20px 0 ;
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th{
+    border: 1px solid gray;
+    padding: 8px;
+  }
+.hudJpJ{
+
+    color: var(--text-color);
+}
+
+.bill-content-payment{
+    width: 24%;
+    height: 97%;
+    background-color: var(--background-color-div);
+    /* border-left: 1px solid gray; */
+    /* border-top: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    margin-top: 10px;
+    border-radius: 20px 0 0 20px;
+}
+.bill-content-payment::-webkit-scrollbar {
+    width: 1px;
+    display: none;
+}
+
+.bill-content-payment:hover::-webkit-scrollbar{
+    display: block;
+}
+.bill-content-payment::-webkit-scrollbar-thumb{
+    background-color: #e3e3e3; /* Scrollbar color */
+    border-radius: 5px; 
+}
+.bill-content-payment-scroll{
+    width: 100%;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bill-payment-nav{
+    width: 100%;
+    height: 30px;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 20px;
+    /* position: absolute; */
+}
+.bill-payment-nav i{
+    margin-top: 20px;
+    margin-right: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.bill-invoice-main{
+    width: 100%;
+    height: 250px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border-bottom: 1px solid gray; */
+}
+.bill-invoice-head{
+    width: 100%;
+    height: 30px;
+    /* background-color: mediumturquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.bill-invoice-content{
+    width: 95%;
+    height: 50px;
+    /* background-color: sienna; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-invoice-content1{
+    width: 95%;
+    height: 50px;
+    /* background-color: sienna; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-invoice-content1-input{
+    display: flex;
+    gap: 3px;
+}
+.bill-invoice-content1-input input{
+    width: 110px;
+    height: 30px;
+    border-radius: 0;
+    color: var(--text-color);
+}
+.bill-invoice-content input{
+    width: 170px;
+    height: 30px;
+    border-radius: 0;
+    color: var(--text-color);
+}
+.bill-perc{
+    width: 40px !important;
+}
+.bill-net-main{
+    width: 90%;
+    height: 40px;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+.bill-paid-balance{
+    width: 100%;
+    height: 120px;
+    /* background-color: rosybrown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bill-payment-buttons{
+    width: 100%;
+    height: 300px;
+    /* background-color: cadetblue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+}
+.bill-payment-button-box{
+    width: 120px;
+    height: 70px;
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bill-payment-paybtn{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgb(213, 16, 16); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bill-payment-paybtn button{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(201, 200, 200);
+    color: var(--text-color);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.bill-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.268);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .bill-popup-content {
+    background-color: var(--pop-up);
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    height: 600px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .bill-popup-close{
+    margin-left: 95%;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+@media (max-width:1100px) {
+    .bill-main{
+        width: 100%;
+        margin-left: 0;
+    }
+}

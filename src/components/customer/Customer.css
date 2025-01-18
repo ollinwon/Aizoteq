@@ -1,0 +1,102 @@
+.light-theme {
+    --background-color: #f1f2f7;
+    --background-color-div: #fff;
+    --text-color: #000;
+    --device-hover: #dae1f3;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #232b3e;
+    --background-color-div: #1a202e;
+    --text-color: #fff;
+    --device-hover: #020910;
+}
+
+
+.customer-main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin-left: 20%;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+.customer-content-main{
+    width: 95%;
+    height: auto;
+    background-color: var(--background-color-div);
+    margin-top: 50px;
+    border-radius: 20px ;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+
+}
+.customer-content-nav{
+    width: 100%;
+    height: 70px;
+    background-color: var(--device-hover);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 10px; */
+}
+.customer-content-head{
+    /* background-color: yellow; */
+    display: flex;
+    margin-left: 10px;
+}
+.customer-content-items{
+    width: 250px;
+    display: flex;
+    /* background-color: teal; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.yGWof{
+    border-radius: none !important;
+}
+.hZZlND::-webkit-scrollbar {
+    height: 1px;
+    color: var(--text-color);
+  }
+  
+  .hZZlND::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+  }
+  .customer-slide-menu {
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    /* Adjust to place below the sliders icon */
+    right: 0;
+    /* Align to the left edge of the parent container */
+    background-color: var(--background-color-div);
+    /* background-color: #005cbb; */
+    border: 1px solid #484848;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    /* Hidden by default */
+  }
+  .customer-slide-menu.show {
+    display: flex;
+    /* Show when toggled */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overflow-y: scroll; */
+    /* width: 200px; */
+  }
+@media (max-width:1100px) {
+    .customer-main{
+        width: 100%;
+        margin-left: 0;
+    }
+}

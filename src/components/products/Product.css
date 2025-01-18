@@ -1,0 +1,30 @@
+.light-theme {
+    --background-color: #f1f2f7;
+    --background-color-div: #fff;
+    --text-color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #232b3e;
+    --background-color-div: #1a202e;
+    --text-color: #fff;
+}
+
+
+.product-main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-color);
+    /* margin-top: 60px; */
+    margin-left: 20%;
+    color: var(--text-color);
+}
+
+
+@media (max-width:1100px) {
+    .product-main{
+        width: 100%;
+        margin-left: 0;
+    }
+}
