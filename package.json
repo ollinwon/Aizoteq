@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://auslandenglish.com",
+  "proxy": "http://13.200.215.17:3000",
   "eslintConfig": {
     "extends": [
       "react-app",
