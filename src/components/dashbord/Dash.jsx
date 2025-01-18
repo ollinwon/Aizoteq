@@ -17,10 +17,10 @@ const Dash = () => {
   //   setTheme(newTheme);
   //   document.documentElement.setAttribute('data-theme', newTheme);
   // };
-  const backendurl = process.env.REACT_APP_BACKEND_URL;
+  // const backendurl = process.env.REACT_APP_BACKEND_URL;
   // const dotenv=require('dotenv');
 
-  console.log("hgguyf",backendurl)
+  // console.log("hgguyf",backendurl)
 
   const [stock, setStock] = useState(null);
   // const [error, setError] = useState(null);
@@ -28,7 +28,7 @@ const Dash = () => {
   useEffect(() => {
     const fetchStock = async () => {
       try {
-        const response = await axios.get(`${backendurl}/api/adminstock/new/count`); // Relative path
+        const response = await axios.get(`/api/adminstock/new/count`); // Relative path
         setStock(response.data.count);
       } catch (err) {
         console.error('Error fetching data:', err);
